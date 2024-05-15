@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clases de Apoyo</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/ico" href="favicon.ico">
+  <script src="https://kit.fontawesome.com/21016c86a5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
     <h1>Clases de Apoyo</h1>
@@ -16,77 +19,140 @@
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#donde">Donde estamos</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="inicio">
     <h2>Bienvenidos a nuestras clases de apoyo</h2>
-    <p>Ofrecemos clases de apoyo para estudiantes de todas las edades y niveles educativos. Nuestro objetivo es ayudar a nuestros alumnos a alcanzar su máximo potencial académico.</p>
+    <p>Ofrecemos clases de apoyo para estudiantes de todas las edades y niveles educativos. Nuestro objetivo es ayudar a
+      nuestros alumnos a alcanzar su máximo potencial académico.</p>
   </section>
 
   <section id="servicios">
     <h2>Nuestros Servicios</h2>
     <div class="servicios-grid">
-      <div class="servicio">
-        <h3>Clases de Matemáticas</h3>
-        <p>Brindamos clases de apoyo en matemáticas para todos los niveles educativos.</p>
-      </div>
-      <div class="servicio">
-        <h3>Clases de Ciencias</h3>
-        <p>Ofrecemos clases de apoyo en diversas áreas de las ciencias, como biología, química y física.</p>
-      </div>
-      <div class="servicio">
-        <h3>Clases de Inglés</h3>
-        <p>Impartimos clases de inglés para estudiantes de todos los niveles, desde principiantes hasta avanzados.</p>
-      </div>
-      <div class="servicio">
-        <h3>Clases de Historia</h3>
-        <p>Apoyo académico en historia para comprender mejor los eventos del pasado.</p>
+      <div class="container">
+
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <i class="fa-solid fa-square-root-variable"></i>
+              <h3>Clase de matemáticas</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Brindamos clases de apoyo en matemáticas para todos los niveles educativos.</p>
+              <a href="#" type="button">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <i class="fa-solid fa-atom"></i>
+              <h3>Clases de Ciencias</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Ofrecemos clases de apoyo en diversas áreas de las ciencias, como biología, química y física.</p>
+              <a href="#" type="button">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <i class="fa-solid fa-language"></i>
+              <h3>Clases de Idiomas</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Impartimos clases de inglés para estudiantes de todos los niveles, desde principiantes hasta avanzados.</p>
+              <a href="#" type="button">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <i class="fa-brands fa-fort-awesome"></i>
+              <h3>Clases de Historia</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Brindamos clases de apoyo en matemáticas para todos los niveles educativos.</p>
+              <a href="#" type="button">Read More</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <section id="nosotros">
     <h2>Sobre Nosotros</h2>
-    <p>Somos un equipo de educadores dedicados con años de experiencia en la enseñanza. Creemos en brindar un ambiente de aprendizaje positivo y alentador para todos nuestros estudiantes.</p>
+    <p>Somos un equipo de educadores dedicados con años de experiencia en la enseñanza. Creemos en brindar un ambiente
+      de aprendizaje positivo y alentador para todos nuestros estudiantes.</p>
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
     <form id="contactForm" action="#" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-  
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-  
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
-  
-        <label for="materia">Materia de interés:</label>
-        <select id="materia" name="materia" required>
-          <option value="">Seleccione una materia</option>
-          <option value="Matemáticas">Matemáticas</option>
-          <option value="Ciencias">Ciencias</option>
-          <option value="Inglés">Inglés</option>
-          <option value="Historia">Historia</option>
-        </select>
-  
-        <label>Nivel educativo:</label>
-        <input type="radio" id="primaria" name="nivel" value="Primaria" required>
-        <label for="primaria">Primaria</label>
-        <input type="radio" id="secundaria" name="nivel" value="Secundaria" required>
-        <label for="secundaria">Secundaria</label>
-        <input type="radio" id="preparatoria" name="nivel" value="Preparatoria" required>
-        <label for="preparatoria">Preparatoria</label>
-  
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-  
-        <input type="submit" value="Enviar">
-      </form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <label for="materia">Materia de interés:</label>
+      <select id="materia" name="materia" required>
+        <option value="">Seleccione una materia</option>
+        <option value="Matemáticas">Matemáticas</option>
+        <option value="Ciencias">Ciencias</option>
+        <option value="Inglés">Inglés</option>
+        <option value="Historia">Historia</option>
+      </select>
+
+      <label>Nivel educativo:</label>
+      <input type="radio" id="primaria" name="nivel" value="Primaria" required>
+      <label for="primaria">Primaria</label>
+      <input type="radio" id="secundaria" name="nivel" value="Secundaria" required>
+      <label for="secundaria">Secundaria</label>
+      <input type="radio" id="preparatoria" name="nivel" value="Preparatoria" required>
+      <label for="preparatoria">Preparatoria</label>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
   </section>
+  <section id="donde">
+    <h2>Donde estamos...</h2>
+    <div class="servicio">
+      <div id="ubicacion-left">
+        <iframe id="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.3596297592276!2d-58.49423532441622!3d-34.5697657729664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb658acd363e5%3A0xcc5269d10a8f95a1!2sAv%20Triunvirato%205375%2C%20C1431FCG%20C1431FCG%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715717203240!5m2!1ses!2sar"
+          max-width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+
 
   <footer>
     <p>&copy; 2024 Clases de Apoyo - Todos los derechos reservados</p>
@@ -94,4 +160,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
