@@ -1,0 +1,26 @@
+/* El fondo oscuro */
+.popup-fondo {
+  position: fixed; /* Fijo en toda la pantalla */
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Negro con un poco de transparencia */
+  z-index: 2; /* Encima del resto */
+  cursor: pointer; /* Icono de mano */
+}
+
+/* El pop-up centrado */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  z-index: 5; /* Encima del fondo */
+  width: 80%; /* Ancho del 80% */
+  max-width: 600px; /* Ancho máximo */
+}

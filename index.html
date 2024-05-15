@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clases de Apoyo</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/ico" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-popup.css">
+  <link rel="icon" type="image/ico" href="img/favicon.ico">
   <script src="https://kit.fontawesome.com/21016c86a5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <h1>Clases de Apoyo</h1>
+    <h1>GRUPO ESPECIAL: LOS ANTI-RECURSADA</h1>
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
@@ -34,7 +35,7 @@
     <h2>Nuestros Servicios</h2>
     <div class="servicios-grid">
       <div class="container">
-
+        <!--CLASES DE MATEMATICA-->
         <div class="card">
           <div class="face face1">
             <div class="content">
@@ -45,11 +46,11 @@
           <div class="face face2">
             <div class="content">
               <p>Brindamos clases de apoyo en matemáticas para todos los niveles educativos.</p>
-              <a href="#" type="button">Read More</a>
+              <a href="javascript:void(0);" type="button" onclick="abrirPopup('matematica')">Quiero más información.</a>
             </div>
           </div>
         </div>
-
+        <!--CLASES DE CIENCIAS-->
         <div class="card">
           <div class="face face1">
             <div class="content">
@@ -60,11 +61,11 @@
           <div class="face face2">
             <div class="content">
               <p>Ofrecemos clases de apoyo en diversas áreas de las ciencias, como biología, química y física.</p>
-              <a href="#" type="button">Read More</a>
+              <a href="javascript:void(0);" type="button" onclick="abrirPopup('ciencias')">Quiero más información.</a>
             </div>
           </div>
         </div>
-
+        <!--CLASES DE IDIOMAS-->
         <div class="card">
           <div class="face face1">
             <div class="content">
@@ -75,11 +76,11 @@
           <div class="face face2">
             <div class="content">
               <p>Impartimos clases de inglés para estudiantes de todos los niveles, desde principiantes hasta avanzados.</p>
-              <a href="#" type="button">Read More</a>
+              <a href="javascript:void(0);" type="button" onclick="abrirPopup('idiomas')">Quiero más información.</a>
             </div>
           </div>
         </div>
-
+        <!--CLASES DE HISTORIA-->
         <div class="card">
           <div class="face face1">
             <div class="content">
@@ -89,11 +90,44 @@
           </div>
           <div class="face face2">
             <div class="content">
-              <p>Brindamos clases de apoyo en matemáticas para todos los niveles educativos.</p>
-              <a href="#" type="button">Read More</a>
+              <p>Brindamos clases de apoyo en historia para todos los niveles educativos.</p>
+              <a href="javascript:void(0);" type="button" onclick="abrirPopup('historia')">Quiero más información.</a>
             </div>
           </div>
         </div>
+        <!--A PARTIR DE ACA ESTAN LOS POPUPS-->
+        <div id="popUp-matematica" class="popup-fondo" onclick="cerrarPopup('matematica')" style="display:none">
+          <div class="popup">
+            <h2>Mi Pop-up</h2>
+            <p>clases martes y jueves de 10 a 12 con seba</p>
+            <button onclick="cerrarPopup('matematica')">Cerrar</button>
+          </div>
+        </div>
+
+        <div id="popUp-ciencias" class="popup-fondo" style="display:none">
+          <div class="popup">
+            <h2>Mi Pop-up</h2>
+            <p>clases martes y jueves de 9 a 12 con nico</p>
+            <button onclick="cerrarPopup('ciencias')">Cerrar</button>
+          </div>
+        </div>
+
+        <div id="popUp-idiomas" class="popup-fondo" style="display:none;">
+          <div class="popup">
+            <h2>Mi Pop-up</h2>
+            <p>clases martes y viernes de 10 a 12 con ro</p>
+            <button onclick="cerrarPopup('idiomas')">Cerrar</button>
+          </div>
+        </div>
+
+        <div id="popUp-historia" class="popup-fondo" style="display:none;">
+          <div class="popup">
+            <h2>Mi Pop-up</h2>
+            <p>Clases martes y sábados de 18 a 20 con Mica</p>
+            <button onclick="cerrarPopup('historia')">Cerrar</button>
+          </div>
+        </div>
+
 
       </div>
     </div>
@@ -101,8 +135,13 @@
 
   <section id="nosotros">
     <h2>Sobre Nosotros</h2>
-    <p>Somos un equipo de educadores dedicados con años de experiencia en la enseñanza. Creemos en brindar un ambiente
-      de aprendizaje positivo y alentador para todos nuestros estudiantes.</p>
+    <p>¡Bienvenidos a Grupo Especial "Los Anti-Recursada", tu aliado en el camino hacia el éxito académico! Desde 2012, nos hemos comprometido a brindar un apoyo integral a estudiantes de todos los niveles en la Capital Federal de Argentina. Nos especializamos en ofrecer clases de apoyo en una variedad de materias clave, incluyendo matemáticas, ciencias (física/química), inglés, historia y muchas otras.
+
+      Nuestra misión es proporcionar a cada estudiante las herramientas y el acompañamiento necesarios para alcanzar su máximo potencial académico. Contamos con un equipo de docentes altamente calificados y apasionados, quienes están dedicados a inspirar, motivar y guiar a nuestros estudiantes en su viaje educativo.
+      
+      Entendemos que cada estudiante es único, por lo que adaptamos nuestras metodologías de enseñanza para satisfacer las necesidades individuales de cada uno. Ya sea que necesites ayuda para comprender conceptos difíciles, prepararte para exámenes importantes o simplemente desees fortalecer tus habilidades académicas, estamos aquí para ayudarte a alcanzar tus metas.
+      
+      Únete a nuestra comunidad de aprendizaje y descubre el poder de la excelencia académica con Grupo Especial "Los Anti-Recursada". ¡Estamos aquí para impulsarte hacia el éxito!</p>
   </section>
 
   <section id="contacto">
@@ -131,8 +170,8 @@
       <label for="primaria">Primaria</label>
       <input type="radio" id="secundaria" name="nivel" value="Secundaria" required>
       <label for="secundaria">Secundaria</label>
-      <input type="radio" id="preparatoria" name="nivel" value="Preparatoria" required>
-      <label for="preparatoria">Preparatoria</label>
+      <input type="radio" id="universidad" name="nivel" value="Universidad" required>
+      <label for="universidad">Universidad</label>
 
       <label for="mensaje">Mensaje:</label>
       <textarea id="mensaje" name="mensaje" rows="4"></textarea>
@@ -149,23 +188,25 @@
           max-width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="redes-margin">
+    
+      <div class="redes-margin" style="display: flex; flex-direction: row;">
+        <h1>Encontranos en nuestras redes.</h1>
         <i class="fa-brands fa-facebook iconos-redes" style="color: blue;"></i>
-        <i class="fa-brands fa-twitter" style="color: lightblue;"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter iconos-redes" style="color: lightblue;"></i>
+        <i class="fa-brands fa-whatsapp  iconos-redes" style="color: green"></i>
+        <i class="fa-brands fa-linkedin iconos-redes" style="color: lightblue"></i>
       </div>
-      
     </div>
   </section>
 
-
+  <!-- NUEVA IMPLEMENTACION DE POP UP-->
 
   <footer>
     <p>&copy; 2024 Clases de Apoyo - Todos los derechos reservados</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/script/script.js"></script>
+  <script src ="/script/popup.js"></script>
 </body>
 
 </html>

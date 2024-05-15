@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: rgb(126,200,239);
+    background: radial-gradient(circle, rgba(126,200,239,0.7624299719887955) 0%, rgba(108,122,233,1) 90%);
+    
   }
   
   header {
@@ -40,8 +43,6 @@ body {
   /* Estilos para la cuadrícula de servicios */
   .servicios-grid {
     display: flex;
-    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;*/
   }
   
   .servicio {
@@ -80,11 +81,11 @@ body {
     }
   }
   
-@media screen and (max-width: 576px) {
-  section {
-    padding: 20px;
+  @media screen and (max-width: 576px) {
+    section {
+      padding: 20px;
+    }
   }
-}
   
   @media screen and (max-width: 480px) {
     header h1 {
@@ -96,15 +97,13 @@ body {
     }
   }
   
-
-
   /* Estilos para el formulario de contacto */
-form {
-    margin-top: 20px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  form {
+      margin-top: 20px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   form label {
