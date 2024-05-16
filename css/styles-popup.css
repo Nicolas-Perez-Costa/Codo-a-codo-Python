@@ -23,4 +23,8 @@
   z-index: 5; /* Encima del fondo */
   width: 80%; /* Ancho del 80% */
   max-width: 600px; /* Ancho máximo */
+  background-image: url("https://cdn.pixabay.com/photo/2018/01/29/13/03/internet-3116062_1280.jpg");
+  border-radius: 20px;
 }
+
+/* Fondo de popup */
