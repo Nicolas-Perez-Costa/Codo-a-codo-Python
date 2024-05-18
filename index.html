@@ -12,24 +12,29 @@
 </head>
 
 <body>
-  <header>
-    <h1>GRUPO ESPECIAL: LOS ANTI-RECURSADA</h1>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#donde">Donde estamos</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <section id="inicio">
-    <h2>Bienvenidos a nuestras clases de apoyo</h2>
-    <p>Ofrecemos clases de apoyo para estudiantes de todas las edades y niveles educativos. Nuestro objetivo es ayudar a
-      nuestros alumnos a alcanzar su máximo potencial académico.</p>
-  </section>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#donde">Donde estamos</a></li>
+        </ul>
+      </nav>
+    <div id="fly-in">  
+      <div><span>Bienvenidos a</span>UNA FUERZA ESPECIAL</div>
+      <div>Bienvenidos a<span>UN GRUPO ESPECIAL</span></div>
+      <div>Llegaste al lugar correcto para evitar <span>RECURSAR</span></div>
+      <div><span>Somos los...</span>ANTI-RECURSADA</div>
+      <div><span>Very</span>Cinematic</div>
+      <div>Fade Away<span>into the distance</span></div>
+      <div>Still Loops <span> for eternity</span></div>
+      <div><span>Just CSS</span> and HTML</div>
+    </div>
+
+  </section> 
 
   <section id="servicios">
     <h2>Nuestros Servicios</h2>
@@ -97,35 +102,59 @@
         </div>
         <!--A PARTIR DE ACA ESTAN LOS POPUPS-->
         <div id="popUp-matematica" class="popup-fondo" onclick="cerrarPopup('matematica')" style="display:none">
-          <div class="popup">
-            <h2>Mi Pop-up</h2>
-            <p>clases martes y jueves de 10 a 12 con seba</p>
-            <button href="javascript:void(0);" onclick="cerrarPopup('matematica')">Cerrar</button>
-            <a href="javascript:void(0);" type="button" onclick="abrirPopup('matematica')">Quiero más información.</a>
+          <div class="popup" style="
+          background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210903/pngtree-mathematics-training-green-minimalist-education-background-image_783265.jpg);">
+            <h2>Clases de matemáticas por niveles:</h2>
+            <ul>
+              <li>Inicio</li>
+              <li>Servicios</li>
+              <li>Nosotros</li>
+              <li>ontacto</li>
+              <li>estamos</li>
+            </ul>
+            <a href="javascript:void(0);" onclick="cerrarPopup('matematica')">Cerrar</a>
           </div>
         </div>
 
         <div id="popUp-ciencias" class="popup-fondo" onclick="cerrarPopup('ciencias')" style="display:none">
           <div class="popup">
-            <h2>Mi Pop-up</h2>
-            <p>clases martes y jueves de 9 a 12 con nico</p>
-            <button onclick="cerrarPopup('ciencias')">Cerrar</button>
+            <h2>Clases de física y química por niveles:</h2>
+            <ul>
+              <li>Inicio</li>
+              <li>Servicios</li>
+              <li>Nosotros</li>
+              <li>ontacto</li>
+              <li>estamos</li>
+            </ul>
+            <a href="javascript:void(0);" onclick="cerrarPopup('ciencias')">Cerrar</a>
           </div>
         </div>
 
         <div id="popUp-idiomas" class="popup-fondo" onclick="cerrarPopup('idiomas')" style="display:none;">
           <div class="popup">
-            <h2>Mi Pop-up</h2>
-            <p>clases martes y viernes de 10 a 12 con ro</p>
-            <button onclick="cerrarPopup('idiomas')">Cerrar</button>
+            <h2>Clases de ingles y japones por niveles:</h2>
+            <ul>
+              <li>Inicio</li>
+              <li>Servicios</li>
+              <li>Nosotros</li>
+              <li>ontacto</li>
+              <li>estamos</li>
+            </ul>
+            <a href="javascript:void(0);" onclick="cerrarPopup('idiomas')">Cerrar</a>
           </div>
         </div>
 
         <div id="popUp-historia" class="popup-fondo" onclick="cerrarPopup('historia')" style="display:none;">
           <div class="popup">
-            <h2>Mi Pop-up</h2>
-            <p>Clases martes y sábados de 18 a 20 con Mica</p>
-            <button onclick="cerrarPopup('historia')">Cerrar</button>
+            <h2>Clases de historia antigua y moderna por niveles:</h2>
+            <ul>
+              <li>Inicio</li>
+              <li>Servicios</li>
+              <li>Nosotros</li>
+              <li>ontacto</li>
+              <li>estamos</li>
+            </ul>
+            <a href="javascript:void(0);" onclick="cerrarPopup('historia')">Cerrar</a>
           </div>
         </div>
 
@@ -174,12 +203,17 @@
       <input type="radio" id="universidad" name="nivel" value="Universidad" required>
       <label for="universidad">Universidad</label>
 
+      <label><input type="radio" name="source" value="web" required> Sitio web</label>
+      <label><input type="radio" name="source" value="social"> Redes sociales</label>
+      <label><input type="radio" name="source" value="other"> Otro</label>
+
       <label for="mensaje">Mensaje:</label>
       <textarea id="mensaje" name="mensaje" rows="4"></textarea>
 
       <input type="submit" value="Enviar">
     </form>
   </section>
+
   <section id="donde">
     <h2>Donde estamos...</h2>
     <div class="servicio redes">
@@ -200,8 +234,6 @@
     </div>
   </section>
 
-  <!-- NUEVA IMPLEMENTACION DE POP UP-->
-
   <footer>
     <p>&copy; 2024 Clases de Apoyo - Todos los derechos reservados</p>
   </footer>
@@ -211,3 +243,4 @@
 </body>
 
 </html>
+

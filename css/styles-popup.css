@@ -23,8 +23,30 @@
   z-index: 5; /* Encima del fondo */
   width: 80%; /* Ancho del 80% */
   max-width: 600px; /* Ancho máximo */
-  background-image: url("https://cdn.pixabay.com/photo/2018/01/29/13/03/internet-3116062_1280.jpg");
   border-radius: 20px;
 }
+.popup a{ 
+  transition: .5s;
+  text-decoration:none; 
+  color: black; box-sizing:
+  border-box; 
+  padding: 10px; 
+  margin: 15px 0 0; 
+  display: inline-block; 
+  border-radius: 8px; 
+} 
 
+.popup a:hover { 
+  background: #333 ; 
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
 /* Fondo de popup */
+/* text-decoration:none;
+  color: black;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+  border-radius: 8px; */
+  
