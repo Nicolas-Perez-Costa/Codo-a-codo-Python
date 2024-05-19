@@ -7,34 +7,34 @@
   <title>Clases de Apoyo</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/styles-popup.css">
-  <link rel="icon" type="image/ico" href="img/logo.ico">
+  <link rel="icon" type="image/ico" href="img/anti-recursada.ico">
   <script src="https://kit.fontawesome.com/21016c86a5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <section id="inicio">
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#donde">Donde estamos</a></li>
-        </ul>
-      </nav>
-    <div id="fly-in">  
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#donde">Donde estamos</a></li>
+      </ul>
+    </nav>
+    <div id="fly-in">
       <div><span>Bienvenidos a</span>UNA FUERZA ESPECIAL</div>
       <div>Bienvenidos a<span>UN GRUPO ESPECIAL</span></div>
-      <div>Llegaste al lugar correcto para evitar <span>RECURSAR</span></div>
+      <div>Brindamos nuestra ayuda en<span>Historia</span></div>
+      <div><span>Y también te salvamos de</span>Matemáticas</div>
+      <div><span>Que no cunda el panico...</span>También en ciencias</div>
+      <div>¿Problemas en multiples lenguajes?<span>Te ayudamos !</span></div>
+      <div>Llegaste al lugar correcto para evitar<span>RECURSAR</span></div>
       <div><span>Somos los...</span>ANTI-RECURSADA</div>
-      <div><span>Very</span>Cinematic</div>
-      <div>Fade Away<span>into the distance</span></div>
-      <div>Still Loops <span> for eternity</span></div>
-      <div><span>Just CSS</span> and HTML</div>
     </div>
 
-  </section> 
+  </section>
 
   <section id="servicios">
     <h2>Nuestros Servicios</h2>
@@ -80,7 +80,8 @@
           </div>
           <div class="face face2">
             <div class="content">
-              <p>Impartimos clases de inglés para estudiantes de todos los niveles, desde principiantes hasta avanzados.</p>
+              <p>Impartimos clases de inglés para estudiantes de todos los niveles, desde principiantes hasta avanzados.
+              </p>
               <a href="javascript:void(0);" type="button" onclick="abrirPopup('idiomas')">Quiero más información.</a>
             </div>
           </div>
@@ -102,22 +103,24 @@
         </div>
         <!--A PARTIR DE ACA ESTAN LOS POPUPS-->
         <div id="popUp-matematica" class="popup-fondo" onclick="cerrarPopup('matematica')" style="display:none">
-          <div class="popup" style="
-          background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210903/pngtree-mathematics-training-green-minimalist-education-background-image_783265.jpg);">
+          <div class="popup"
+            style="
+            background-color: #504d4dd7; text-align: left;">
             <h2>Clases de matemáticas por niveles:</h2>
-            <ul>
+            <ul>  
               <li>Inicio</li>
               <li>Servicios</li>
               <li>Nosotros</li>
               <li>ontacto</li>
               <li>estamos</li>
             </ul>
-            <a href="javascript:void(0);" onclick="cerrarPopup('matematica')">Cerrar</a>
+            <a href="javascript:void(0);" onclick="cerrarPopup('matematica')" style="color:white;">Cerrar</a>
           </div>
         </div>
 
         <div id="popUp-ciencias" class="popup-fondo" onclick="cerrarPopup('ciencias')" style="display:none">
-          <div class="popup">
+          <div class="popup" style="
+          background-color: #504d4dd7; text-align: left;">
             <h2>Clases de física y química por niveles:</h2>
             <ul>
               <li>Inicio</li>
@@ -126,12 +129,13 @@
               <li>ontacto</li>
               <li>estamos</li>
             </ul>
-            <a href="javascript:void(0);" onclick="cerrarPopup('ciencias')">Cerrar</a>
+            <a href="javascript:void(0);" onclick="cerrarPopup('ciencias')" style="color:white;">Cerrar</a>
           </div>
         </div>
 
         <div id="popUp-idiomas" class="popup-fondo" onclick="cerrarPopup('idiomas')" style="display:none;">
-          <div class="popup">
+          <div class="popup" style="
+          background-color: #504d4dd7; text-align: left;">
             <h2>Clases de ingles y japones por niveles:</h2>
             <ul>
               <li>Inicio</li>
@@ -140,12 +144,13 @@
               <li>ontacto</li>
               <li>estamos</li>
             </ul>
-            <a href="javascript:void(0);" onclick="cerrarPopup('idiomas')">Cerrar</a>
+            <a href="javascript:void(0);" onclick="cerrarPopup('idiomas')" style="color:white;">Cerrar</a>
           </div>
         </div>
 
         <div id="popUp-historia" class="popup-fondo" onclick="cerrarPopup('historia')" style="display:none;">
-          <div class="popup">
+          <div class="popup" style="
+          background-color: #504d4dd7; text-align: left;">
             <h2>Clases de historia antigua y moderna por niveles:</h2>
             <ul>
               <li>Inicio</li>
@@ -154,7 +159,7 @@
               <li>ontacto</li>
               <li>estamos</li>
             </ul>
-            <a href="javascript:void(0);" onclick="cerrarPopup('historia')">Cerrar</a>
+            <a href="javascript:void(0);" onclick="cerrarPopup('historia')" style="color:white;">Cerrar</a>
           </div>
         </div>
 
@@ -165,20 +170,29 @@
 
   <section id="nosotros">
     <h2>Sobre Nosotros</h2>
-    <p>¡Bienvenidos a Grupo Especial "Los Anti-Recursada", tu aliado en el camino hacia el éxito académico! Desde 2012, nos hemos comprometido a brindar un apoyo integral a estudiantes de todos los niveles en la Capital Federal de Argentina. Nos especializamos en ofrecer clases de apoyo en una variedad de materias clave, incluyendo matemáticas, ciencias (física/química), inglés, historia y muchas otras.
+    <p>¡Bienvenidos a Grupo Especial "Los Anti-Recursada", tu aliado en el camino hacia el éxito académico! Desde 2012,
+      nos hemos comprometido a brindar un apoyo integral a estudiantes de todos los niveles en la Capital Federal de
+      Argentina. Nos especializamos en ofrecer clases de apoyo en una variedad de materias clave, incluyendo
+      matemáticas, ciencias (física/química), inglés, historia y muchas otras.
 
-      Nuestra misión es proporcionar a cada estudiante las herramientas y el acompañamiento necesarios para alcanzar su máximo potencial académico. Contamos con un equipo de docentes altamente calificados y apasionados, quienes están dedicados a inspirar, motivar y guiar a nuestros estudiantes en su viaje educativo.
-      
-      Entendemos que cada estudiante es único, por lo que adaptamos nuestras metodologías de enseñanza para satisfacer las necesidades individuales de cada uno. Ya sea que necesites ayuda para comprender conceptos difíciles, prepararte para exámenes importantes o simplemente desees fortalecer tus habilidades académicas, estamos aquí para ayudarte a alcanzar tus metas.
-      
-      Únete a nuestra comunidad de aprendizaje y descubre el poder de la excelencia académica con Grupo Especial "Los Anti-Recursada". ¡Estamos aquí para impulsarte hacia el éxito!</p>
+      Nuestra misión es proporcionar a cada estudiante las herramientas y el acompañamiento necesarios para alcanzar su
+      máximo potencial académico. Contamos con un equipo de docentes altamente calificados y apasionados, quienes están
+      dedicados a inspirar, motivar y guiar a nuestros estudiantes en su viaje educativo.
+
+      Entendemos que cada estudiante es único, por lo que adaptamos nuestras metodologías de enseñanza para satisfacer
+      las necesidades individuales de cada uno. Ya sea que necesites ayuda para comprender conceptos difíciles,
+      prepararte para exámenes importantes o simplemente desees fortalecer tus habilidades académicas, estamos aquí para
+      ayudarte a alcanzar tus metas.
+
+      Únete a nuestra comunidad de aprendizaje y descubre el poder de la excelencia académica con Grupo Especial "Los
+      Anti-Recursada". ¡Estamos aquí para impulsarte hacia el éxito!</p>
   </section>
 
   <section id="contacto">
     <h2>Construi tu armadura estudiando con nosotros, y evita recursar. Contactanos</h2>
-    <form id="contactForm" action="#" method="POST" style="
-    background-image: url(https://media.wired.com/photos/5b3347ee572ae17d05ab1ff7/master/w_1600%2Cc_limit/dark_knight_book_pg4-batmobile_660.jpg);">
->
+    <form id="contactForm" action="#" method="POST"
+      style="
+    background-image: url(https://c.wallhere.com/photos/5e/8e/Batman_The_Batman_2022_dark_DC_Comics_black_background_dark_silhouette_digital_art_Batman_logo-2096213.jpg!d);">
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required>
 
@@ -192,22 +206,19 @@
       <select id="materia" name="materia" required>
         <option value="">Seleccione una materia</option>
         <option value="Matemáticas">Matemáticas</option>
-        <option value="Ciencias">Ciencias</option>
-        <option value="Inglés">Inglés</option>
+        <option value="Ciencias">Física</option>
+        <option value="Ciencias">Química</option>
+        <option value="Idiomas">Japonés</option>
+        <option value="Idiomas">Inglés</option>
         <option value="Historia">Historia</option>
       </select>
 
       <label>Nivel educativo:</label>
-      <input type="radio" id="primaria" name="nivel" value="Primaria" required>
-      <label for="primaria">Primaria</label>
-      <input type="radio" id="secundaria" name="nivel" value="Secundaria" required>
-      <label for="secundaria">Secundaria</label>
-      <input type="radio" id="universidad" name="nivel" value="Universidad" required>
-      <label for="universidad">Universidad</label>
 
-      <label><input type="radio" name="source" value="web" required> Sitio web</label>
-      <label><input type="radio" name="source" value="social"> Redes sociales</label>
-      <label><input type="radio" name="source" value="other"> Otro</label>
+      <label><input type="radio" id="primaria" name="nivel" value="Primaria" required>Primaria</label>
+      <label><input type="radio" id="secundaria" name="nivel" value="Secundaria">Secundaria</label>
+      <label><input type="radio" id="terciario" name="nivel" value="Terciario">Terciario</label>
+      <label><input type="radio" id="universidad" name="nivel" value="Universidad">Universidad</label>
 
       <label for="mensaje">Mensaje:</label>
       <textarea id="mensaje" name="mensaje" rows="4"></textarea>
@@ -218,31 +229,36 @@
 
   <section id="donde">
     <h2>Donde estamos...</h2>
-    <div class="servicio redes">
+    <div class="redes-margin">
       <div id="ubicacion-left">
-        <iframe id="mapa"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.3596297592276!2d-58.49423532441622!3d-34.5697657729664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb658acd363e5%3A0xcc5269d10a8f95a1!2sAv%20Triunvirato%205375%2C%20C1431FCG%20C1431FCG%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715717203240!5m2!1ses!2sar"
-          max-width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        <iframe id="mapa" style="border-radius: 20px; width: 100%;"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52510.464315275356!2d-58.60007055136718!3d-34.657126799999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9f63396ae49%3A0xb292a958b7730381!2sCodo%20a%20codo%20y%20centro%20de%20formacion%20profecional!5e0!3m2!1ses-419!2sar!4v1716077350682!5m2!1ses-419!2sar"
+          height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    
-      <div class="redes-margin" style="display: flex; flex-direction: row;">
-        <h1>Encontranos en nuestras redes.</h1>
-        <i class="fa-brands fa-facebook iconos-redes" style="color: blue;"></i>
-        <i class="fa-brands fa-twitter iconos-redes" style="color: lightblue;"></i>
-        <i class="fa-brands fa-whatsapp  iconos-redes" style="color: green"></i>
-        <i class="fa-brands fa-linkedin iconos-redes" style="color: lightblue"></i>
+
+      <div class="redes-margin" style="display: flex; flex-direction: column;">
+        <h1>Medios de transporte con los cuales llegar:</h1>
+        <ul style="text-align: left; font-size: medium;">
+          <li>Colectivos: 21, 22, 101, 275, π.</li>
+          <li>Trenes: SAN MARTIN, Y EL OTRO.</li>
+          <li>Helicoptero: Estacionar al lado del avión invisible de la mujer maravilla.</li>
+          <li>Batimovil: Pedir el número de Batman en recepción.</li>
+        </ul>
       </div>
     </div>
+
+
   </section>
 
   <footer>
-    <p>&copy; 2024 Clases de Apoyo - Todos los derechos reservados</p>
+    <p>&copy; 2024 Grupo especial los Anti-Recursada - Todos los derechos reservados</p>
+    <a class="fa-brands fa-facebook iconos-redes" style="color: blue; margin: 5px; text-decoration: none;" href="https://www.facebook.com/?locale=es_LA" target="_blank"></a>
+    <a class="fa-brands fa-whatsapp  iconos-redes" style="color: green; margin: 5px; text-decoration: none;" href="https://www.whatsapp.com/?lang=es_LA" target="_blank"></a>
   </footer>
 
   <script src="script/script.js"></script>
-  <script src ="script/popup.js"></script>
+  <script src="script/popup.js"></script>
 </body>
 
 </html>
-

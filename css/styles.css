@@ -1,4 +1,7 @@
-  body {
+ html {
+  overflow-x: hidden;
+ }
+ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -113,9 +116,10 @@
   }
   
   form label {
-    display: block;
+    display: flex;
     margin-bottom: 10px;
     font-weight: bold;
+
   }
   
   form input[type="text"],
@@ -148,19 +152,25 @@
   form input[type="submit"]:hover {
     background-color: #555;
   }
+
   /* Estilos para redes */
   .redes {
     display: flex;
     flex-flow: row wrap;
   }
+
   @media screen and (min-width: 1000px){
     .redes-margin{
       margin-left: 10px;
     }
   }
+
   .iconos-redes {
-    font-size: 50px;
-    
+    font-size: 30px;
+  }
+  
+  .redes-margin{
+    margin: auto;
   }
   /* Estilos adicionales para hacer la página responsive */
   @media screen and (max-width: 480px) {
@@ -170,7 +180,6 @@
   }
 
 /* Estilos para los card */
-
 .container{
   width: 100%;
   position: relative;
@@ -215,7 +224,6 @@
     10px 0 80px #0ff;
   border-radius: 15px 15px 0px 0px;
 }
-
 
 .container .card .face.face1 .content{
   opacity: .2;
@@ -286,12 +294,11 @@
 }
 
 /* FONDO ESPECIAL */
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 #fly-in {
   font-size: 4em;
-  margin: 40vh auto;
+  margin: 30vh auto 40vh auto;
   height: 20vh; 
   text-transform: uppercase;
 }
