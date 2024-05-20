@@ -80,10 +80,10 @@
       text-align: center;
     }
   
-    nav ul li {
+  /*  nav ul li {
       /*display: block;*/
-      /*margin: 10px 0;*/
-    }
+      /*margin: 10px 0;
+    } */
   
     section {
       padding: 30px;
@@ -178,7 +178,7 @@
       width: 100%;
     }
     #fly-in {
-      font-size: 3em;
+      font-size: 1em;
       margin: 30vh auto 40vh auto;
       height: 20vh; 
       text-transform: uppercase;
