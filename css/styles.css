@@ -76,13 +76,13 @@
     }
   
     nav ul {
-      display: block;
+      /*display: block;*/
       text-align: center;
     }
   
     nav ul li {
-      display: block;
-      margin: 10px 0;
+      /*display: block;*/
+      /*margin: 10px 0;*/
     }
   
     section {
@@ -176,6 +176,12 @@
   @media screen and (max-width: 480px) {
     form input[type="submit"] {
       width: 100%;
+    }
+    #fly-in {
+      font-size: 3em;
+      margin: 30vh auto 40vh auto;
+      height: 20vh; 
+      text-transform: uppercase;
     }
   }
 
